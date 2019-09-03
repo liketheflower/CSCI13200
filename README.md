@@ -1,7 +1,16 @@
-# CSCI13200
-CSCI 13200 - Practical UNIX and Programming, with Lab Hunter College, 2019 Fall
+# Course
+CSCI 13200 - Practical UNIX and Programming, with Lab Hunter College, 
 
-# this repo is used to record the programming language learning process to help students study programming and review in case it is needed in future.
+# Semester
+2019 Fall
 
-Instructor:
+# Objective
+this repo is used to record the programming language learning process to help students study programming and review in case it is needed in future.
+
+This class is trying to help students program like a computer scientist under linux environment.
+
+# Instructor
 Xiaoke(Jimmy) Shen
+
+# Stduents
+22 selected students with all kinds of backgrounds from Hunter College.
