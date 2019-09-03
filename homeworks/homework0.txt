@@ -1,4 +1,5 @@
 Due the following class and we will talk the solution at the beginning of the following class.
+Please submit it to black board. 
 
 1. we have two variables a and b. a=3, b= 4, what is the output of:
 1) a/b
