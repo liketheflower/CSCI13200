@@ -9,7 +9,7 @@ this repo is used to record the programming language learning process to help st
 
 This class is trying to help students program like a computer scientist under linux environment.
 
-# Instructor:
+# Instructor
 Xiaoke(Jimmy) Shen
 
 # Stduents
