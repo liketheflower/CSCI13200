@@ -1,8 +1,17 @@
 """
 This code is used to implement merge sort
+Jimmy shen
+09/02/2019
 """
 import collections
 def merge_sort(a):
+    """
+    merge sort
+    Args:
+        a: a list
+    Returns:
+        a sorted list
+    """
     if len(a)<=1:return a
     N = len(a)
     left, right = merge_sort(a[:N//2]), merge_sort(a[N//2:])
