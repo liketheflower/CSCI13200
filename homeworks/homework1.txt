@@ -1,0 +1,10 @@
+Due the following class and we will talk the solution at the beginning of the following class.
+Please ONLY submit it to black board. 
+
+1. Print hello world 0 to hello world 20 by using loops.
+
+2. For quesiton 1, skip the hello world 17.
+
+3. Print 0 to a number which is an even number and greater than 25.
+
+4. input an integer from computer to output your decision of: 1) this number is a negative number 2) this number is a positive number. 3) this number is equal to 0.
