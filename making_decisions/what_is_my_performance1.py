@@ -1,13 +1,17 @@
 """
 making decsions
-<, > , <=, >= , ==
+<, > , <=, >= , ==, !=
 1<3 and 2>3
 input
 """
 
-
-score = input('Pls input your score of CSCI 13200: ')
-score = int(score)
+while True: 
+    score = input('Pls input your score of CSCI 13200: ')
+    score = int(score)
+    if 0<=score<=100:
+        break
+    else:
+        print('the score should be greater than 0 and less than 100. Pls input again')
 if 90<=score<=100:
     print('you got A')
 if 80<=score<90:
