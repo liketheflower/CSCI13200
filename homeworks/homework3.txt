@@ -1,0 +1,20 @@
+Due the following class and we will talk the solution at the beginning of the following class.
+Please ONLY submit it to black board. 
+
+1. write a function to get the sum of 1 to n(inclusively) by using a list.
+
+2. 1) create a list named a contains numbers: 10,9,8,... 1.
+   2) print the first element of this list.
+   3) print the first 3 elements of this list.
+   4) print the last element of this list.
+   5) get a reverse version of this list.
+   6) what is the output of a new list c = a+a
+   7) execute the follwing program to see what will happen:
+
+while len(a)>0:
+    this_element = a.pop()
+    print('length of list a', len(a))
+    print('a', a) 
+    print('this_element', this_element)
+
+
