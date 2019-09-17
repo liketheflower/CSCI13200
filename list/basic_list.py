@@ -28,3 +28,6 @@ print('b', b)
 print('c is a+b, what is c', c)
 c = c[::-1]
 print('reserve c', c)
+
+
+
