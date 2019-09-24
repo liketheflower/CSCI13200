@@ -21,6 +21,13 @@ def sum_1_to_n(n):
     # return s[n]
 
 sum_1_to_n(6)
+print('************')
+def s(n):
+   # if n==0:return 0
+    return s(n-1)+n
+
+print(s(6))
+
 
 """
 2. given a list 
