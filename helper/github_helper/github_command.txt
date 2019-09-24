@@ -1,0 +1,9 @@
+# clone a repo from github
+git clone https://github.com/liketheflower/jimmy_csci13200.git
+
+
+# update your repo
+git add filename
+git commit -m 'what is changed'
+git push origin master
+
