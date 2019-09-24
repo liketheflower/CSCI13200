@@ -23,7 +23,7 @@ def sum_1_to_n(n):
 sum_1_to_n(6)
 print('************')
 def s(n):
-   # if n==0:return 0
+    if n==0:return 0
     return s(n-1)+n
 
 print(s(6))
