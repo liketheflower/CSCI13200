@@ -1,0 +1,15 @@
+Due the following class and we will talk the solution at the beginning of the following class.
+Please ONLY submit it to black board. 
+1. Read the link below to figure out what is Fibonacci Sequence
+https://www.mathsisfun.com/numbers/fibonacci-sequence.html
+
+2. Why
+1 + 2 + 3 + 4 + ...+n = (n+1)*(n)//2 ?
+Write a function to get sum of 1 to n by using this equation.
+Optional question: Compared with our previous solutions, which one is faster? How to evalute the speed of a program?
+
+3. Search on google: 'python dictionary' to study python dictionary by yourself.
+
+
+4. Search on google: 'python set' to study python set by yourself.
+
