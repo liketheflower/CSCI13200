@@ -4,6 +4,9 @@ git clone https://github.com/liketheflower/jimmy_csci13200.git
 
 # update your repo
 git add filename
+# we can add everything under current path by using 'git add .'
+# we can add everything under current repo 'git add -all'
+
 git commit -m 'what is changed'
 git push origin master
 
