@@ -27,7 +27,12 @@ sum_1_to_n(6)
 a=[-1, 2, 3,-4, -8, 9, -100, -100, 90]
 get the index of minimum value of this list.
 get the index of maximum value of this list.
+"""
+a=[-1, 2, 3,-4, -8, 9, -100, -100, 90]
+print(max(a))
+print(a.index(max(a)))
 
+"""
 3. plot y=2*x,  x is from 0 to 10 with step of 0.1. (hint: you can write xs=[0+0.1*i for i in range(int(10/0.1))])
 4. plot y=n*(n+1)//2  n is from 0 to 100 with step of 1. 
 5. plot y=e**x. x is from 0 to 10 with step of 0.1. (hint: e can be get by import math; math.e)
