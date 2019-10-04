@@ -1,0 +1,44 @@
+Due the following class and we will talk the solution at the beginning of the following class.
+Please ONLY submit it to black board. 
+1. Regarding dictionay, 
+we have a following dict to record the test score of CSCI13200.
+
+my_score_dict = {'jimmy':90, 'alex':89,'susan':90}
+what will be the contents of 
+list(my_score_dict.keys())
+list(my_score_dict.values())
+list(my_score_dict.items())
+list(my_score_dict)
+
+what will be the output of the following code
+for key, value in my_score_dict.items():   
+    print(k, v)
+
+2. Dictionary again.
+
+we have a list 
+a = [1, 1, 2, 3, 4, 2, 3, 1, 5]
+we have a defaultdict by using collections.
+what will be the output of the following code
+
+import collections
+a_dict = collections.defaultdict(int)
+for item in a:
+    print(a_dict[item])
+    a_dict[item] += 1
+print(a_dict)
+
+
+3. related to set
+we have a list, run these code to see the outputs.
+a = [1, 1, 2, 3, 4, 2, 3, 1, 5]
+a_set = set(a)
+print(type(a_set))
+#what is the length of a
+print(len(a))
+#what is the lenght of a_set
+print(len(a_set))
+
+
+Question? how to find unique elements of list a by using set. (hint, set contains elements without repeating. you can convert a set into a list by using list(a_set))
+
