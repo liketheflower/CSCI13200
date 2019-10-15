@@ -19,8 +19,9 @@ print(get_n_random_numbers(10))
 long_random_list = get_n_random_numbers(100)
 import matplotlib.pyplot as plt
 plt.scatter(list(range(len(long_random_list))), long_random_list, c ='#f46d43', alpha=0.8,s=10, label='before sort')
-plt.scatter(list(range(len(long_random_list))), sorted(long_random_list), c ='#66bd63', alpha=0.4,s=10, label='after sort')
+plt.scatter(list(range(len(long_random_list))), sorted(long_random_list), c ='#66bd63', alpha=1.0,s=100, label='after sort')
 plt.legend(loc='upper center')
+plt.savefig('before_sort_after_sort.png')
 plt.show()
 """
 You are suppose to do:
