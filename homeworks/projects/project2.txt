@@ -31,7 +31,7 @@ HALT
 READ : 0
 WRITE: 1
 ADD  : 2
-HALT : 127 
+HALT : 255 
 
 
 0, 0, 1, 0
@@ -69,24 +69,52 @@ Hint:
 Put beginning number of i which is 1 at memory[B0], ending number of i which is 10 at memory[E0]
 
 1. read the beginning number of i to register 01
+READ MEMO[0] $1
 2. read the endding number of i to register 02
+READ MEMO[1] $2
 3. set the initial res as 0 and save the result in register 03
-4. add register 03 with value i which is saved in register 01
+READ MEMO[2] $3
+4. add register 03 with value i which is saved in register 03
+res += i
+res = res + i
+ADD  $res $i $res
+ADD  $3 $1 $3
 5. increase i by 1
-6. compare i to traget
-7. it i>target: stop
-8. else: go to step 4
-
-"""
-READ B0 01
-READ E0 02
-ADD ZERO ZERO 03
-ADD 03 B0 03
-ADDI B0 01 01
-COMPARE B0 
+ i = i + 1
+$1 = $1 + 1
+ADDI $1, 1, $1
+6.0 compare i to target
+COMP $i $target STEP4
+COMP $1 $2 STEP4
+6.1. if i==target: stop
+6.2. else: go to step 4
+7. Halt
 """
 
+READ MEMO[0] $1
+READ MEMO[1] $2
+READ MEMO[2] $3
+ADD  $3 $1 $3
+ADDI $1, 1, $1
+COMP $1 $2 STEP4
+HALT
+"""
+READ 0, 1, 0
+READ 1, 2, 0
+READ 2, 3, 0
+ADD  3, 1, 3
+ADDI 1, 1,  1
+COMP 1, 2, STEP4
+(meaning of COMP, compare register a and register b, if they are not equal, go to the indicated step)
+HALT
 
+
+READ : 0
+WRITE: 1
+ADD  : 2
+ADDi  : 3
+COMP : 4
+HALT : 255 
 
 
 
