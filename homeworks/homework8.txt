@@ -1,0 +1,11 @@
+Due the following class and we will talk the solution at the beginning of the following class.
+Please ONLY submit it to black board. 
+1. What is the time complexity of insertation sort algorithm in the best case? What about the worst case?
+2. What is the time complexity of merge sort and quick sort?
+3. Review the fibonacci_numbers code which is attached in the end of project1.py file.
+4. What is the time complexity of fibonacci_numbers code without Memoization.
+5. What is the formular of 1+2+3+4...+n
+6. What is the formular of sum of first n items of a Arithmetic Sequence
+Hint is given below: 
+https://www.mathsisfun.com/algebra/sequences-sums-arithmetic.html
+7. What is the formular of sum of 1+2+4+8+16+2^n
