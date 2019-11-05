@@ -11,3 +11,5 @@ print(sorted(a))
 print(sorted(a, key=my_reverse))
 print(sorted(a, key=lambda x:-x))
 
+a = [[1,3],[4, 10],[10, -10], [10, 100]]
+
