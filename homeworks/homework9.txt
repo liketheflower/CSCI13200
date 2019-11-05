@@ -1,0 +1,23 @@
+Due the following class and we will talk the solution at the beginning of the following class.
+Please ONLY submit it to black board. 
+1. a = (1, )
+ what is data type of a
+2. a = (1, 2, 3, 4) + (3, )
+is a hashable?
+3. a = [1, 2, 3, 4, 3]
+is a hashable?
+4. a = [[1, 2], [-10, 9], [0, 100], [1000, 0], [0, -1000]]
+sort a by the absolute value of the second element.
+5. Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+Example:
+
+Given nums = [2, 7, 11, 15], target = 9,
+
+Because nums[0] + nums[1] = 2 + 7 = 9,
+return [0, 1].
+
+6. what is the time complexity of your solution for question 5.
+ 
