@@ -10,6 +10,7 @@ def my_reverse(x):return -x
 print(sorted(a))
 print(sorted(a, key=my_reverse))
 print(sorted(a, key=lambda x:-x))
-
-a = [[1,3],[4, 10],[10, -10], [10, 100]]
-
+def sort_by_distance_to_origin(x):
+    return x[0]**2+x[1]**2
+a = [[1,3],[40, 10],[-10, -10], [10, 100]]
+print(sorted(a, key=sort_by_distance_to_origin))
