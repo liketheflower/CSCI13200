@@ -16,3 +16,4 @@ a = [[1,3],[40, 10],[-10, -10], [10, 100]]
 def sort_be_second_element(x):return x[1]
 print(sorted(a, key=sort_be_second_element))
 print(sorted(a, key=sort_by_distance_to_origin))
+print(sorted(a, key=lambda x:x[0]**2+x[1]**2))
