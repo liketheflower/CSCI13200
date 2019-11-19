@@ -1,0 +1,11 @@
+Due the following class and we will talk the solution at the beginning of the following class.
+Please ONLY submit it to black board. 
+1. What is the time complexity of binary search?
+2. a = [0,1,2,3,4,5,6]
+what is bisect.bisect(a, 7) 
+what is bisect.bisect(a, 0) 
+what is bisect.bisect(a, 6) 
+3. What is the time complexity of bisect?
+4. Please write a code by using both sequentical search and binary search to guess the price of a product.
+The highest possible price is 10**9 and it is a sceret price, your program will not be given in advance.
+ 
