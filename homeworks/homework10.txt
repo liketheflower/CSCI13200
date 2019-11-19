@@ -8,4 +8,7 @@ what is bisect.bisect(a, 6)
 3. What is the time complexity of bisect?
 4. Please write a code by using both sequentical search and binary search to guess the price of a product.
 The highest possible price is 10**9 and it is a sceret price, your program will not be given in advance.
- 
+5. What is the difference between the following two codes?
+    1). for i in list(range(10)):print(i)
+    2). for i in range(10):print(i)
+   what will happen if we change 10 to 1000000000000 ? 
