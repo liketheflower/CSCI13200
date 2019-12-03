@@ -1,4 +1,6 @@
 Due the following class and we will talk the solution at the beginning of the following class.
 Please ONLY submit it to black board. 
 1. write a bottom up approach to solve the fibonacci sequence problem.
-2. write a top down approach to solve the fibonacci sequence problem. 
+2. write a top down approach to solve the fibonacci sequence problem.
+3. shell script: read this tutorial to get ready for a little bit loops by using shell script.
+https://www.shellscript.sh/loops.html 
