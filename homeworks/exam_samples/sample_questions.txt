@@ -1,0 +1,226 @@
+Part A: Basic Linux 
+
+ls
+ls | grep .py
+pwd
+
+df -h
+du -hsc *
+
+ls -l
+ls -ltr
+chmod +x file_name.sh
+./file_name.sh
+ssh user_name@eniac.cs.hunter.cuny.edu
+sudo reboot
+sudo poweroff
+mkdir CSCI13200
+cd CSCI13200
+#suppose you are creating a file named hello_world.py
+cp hello_world.py hello_world_new.py
+mv hello_world.py byebye_world.py
+cd ..
+cp -r CSCI13200  CSCI13200_NEW
+cd ~/
+
+
+for i in 1 2 3 4 5
+do
+  echo "Hello World $i"
+done
+
+#count how many python files do you have in your current folder
+ls *.py | wc -l
+ls | grep .py | wc -l
+
+
+ps -al
+kill -9 process_id
+
+Part B: basic Python
+1. what is the output of the following code:
+>>> a , b = 4, 3
+>>> print(a//b)
+1
+>>> print(a/b)
+1.3333333333333333
+>>> print(a%b)
+1
+>>> print(a**b)
+64
+2. Typing
+>>> a = 1
+>>> type(a)
+<class 'int'>
+>>> a = 1.
+>>> type(a)
+<class 'float'>
+>>> a = '1'
+>>> type(a)
+<class 'str'>
+>>> a = [1]
+>>> type(a)
+<class 'list'>
+>>> a = set()
+>>> type(a)
+<class 'set'>
+>>> a = {}
+>>> type(a)
+<class 'dict'>
+>>> a = {1}
+>>> type(a)
+<class 'set'>
+>>> a = True
+>>> type(a)
+<class 'bool'>
+3. List:
+a. basic list:
+1) generate a list contains [0, 1, 2, 3, 4, 5, 6, ... 100]
+2) reverse this list
+3) get the fourth element of this list
+4) skip of fourth element of this list
+5) get the first two elements of this list
+6) get the last two elements of this list
+7) find numbers can be divided by both 2 and 3.
+b. advanced list:
+you have a list 
+a = [1, -1, 2, -3, 4, -5, 9, 1000, 19999, 9999, -190000]
+1) what is the length of this list?
+2) what is the average value of this list?
+3) what is the maximum value of this list?
+4) what is the index of the maximum value?
+5) sort this list from small to large
+6) sort this list by absoluate value
+4. Dictionary
+performance_of_csci13200 = {'alex': 100, 'jimmy':85, 'susan':88, 'sophia':78}
+1) print keys of performance_of_csci13200
+2) put keys into a list: names
+3) put values into a list: scores
+4) what is the average score?
+5) what is the maximum score?
+6) put the items of performance_of_csci13200 into a list
+7) sort the items list of performance_of_csci13200 by score (hint: you can use key lambda x:x[1] to sort list by the scond element)
+3. Make decsions:
+performance_of_csci13200 = {'alex': 100, 'jimmy':85, 'susan':88, 'sophia':78}
+Yes, you have the same performance dictionary. Now, we don't care about the score. We are going to give a final performance of this student based on score by using the following rules:
+[95, 100]: A+
+[90, 95)  : A
+[80, 90)  : A-
+[70, 80) : B
+[60, 70) : C
+[0, 60)  : F
+write a program to generate a new dictionary with name: perfformance as key value pair. such as {'alex':'A+'}
+4. Loops:
+a.
+you have a list
+a = [1, -1, 2, -3, 4, -5, 9, 1000, 19999, 9999, -190000]
+1) traverse this list and print the element of this list during the traversing
+2) traverse this list and print the index, element of this list during the traversing
+b. while loops
+what will be done for the following loops?
+score = int(input('please input your exam score:'))
+while score<0 or score>100:
+    score = int(input('please input your exam score again. The socre should be in the range of 0 and 100 inclusively:'))
+4. Strings:
+a = 'I love Python and Python loves me!'
+1) 
+a.count('love')
+2)
+a.find('love')  
+3) 
+a.find('love') == a.rfind('love')
+4)
+a.startswith('I')
+5)
+a.endswith('I ')
+6) what will be b if we have this code:
+b =  a.replace('love', 'hate')
+7)
+>>> d = a.split()
+>>> 
+>>> d
+['I', 'love', 'Python', 'and', 'Python', 'loves', 'me!']
+>>> "".join(d)
+'IlovePythonandPythonlovesme!'
+>>> " ".join(d)
+'I love Python and Python loves me!'
+>>> "_".join(d)
+'I_love_Python_and_Python_loves_me!'
+Part C: solving problems by using python.
+1. What is the favorite color of my community's cars? Alex is interested in the favorite color of his neighborhood. He is collecting the car colors during a lovely sunshine weekend afternoon. Here is the data he collected:
+
+car_colors = ['white', 'grey', 'white', 'grey', 'black', 'silver', 'green', 'black', 'white']
+Write a program to help Alex find out what is the favorite color of his neighbor's cars?
+import collections
+def favorite_car_color(car_colors):
+    # complete this function
+
+
+
+
+car_colors = ['white', 'grey', 'white', 'grey', 'black', 'silver', 'green', 'black', 'white']
+favorite_color = favorite_car_color(car_colors)
+print("Alex's neighbors' favoriate car color is: ", favorite_color)
+
+2. Performance hacker.By accident, Alex knows that the performance of the CSCI13200 is saved in a file as a string in the following format.names = "alex,jimmy,susan,sophia,Andrew"performance = 'A+,A,A,'A-,INC'To make the problem simple, there is a constraint that the original performance can only be 'A+', 'A', 'A-', 'INC'.
+1) Please complete the function to help Alex finish this impossible task.
+2) Please help professor of CSCI13200 to check whehter we have duplicated values in IDs.
+
+names = "alex,jimmy,susan,sophia,Andrew"
+IDs = "1,2,5,2,4"
+performance = "A+,A,A,A-,INC"
+def performance_hack(performance):
+    # Please complete here
+
+
+
+
+print('original performance: ', performance)
+performance =  performance_hack(performance)
+print('new performance: ', performance)
+
+def find_duplication(a):
+    # Please complete here
+
+
+
+
+if find_duplication(IDs.split(',')):
+    print('Hello, professor, there is no duplication in the ID list.')
+else:
+    print('Hello, professor, there ARE some duplications in the ID list.')
+
+
+
+
+3. Implement quick sort.
+def quick_sort(a):
+    
+
+
+a = [1, 3, 3, 1, -1, 10]
+print(quick_sort(a))
+4. Write a function to implement the factorial caculation (hint: factorial(4) = 4*3*2*1).
+def factorial(n):
+
+
+
+n = 10
+print(factorial(n))
+what is the time complexity of quick sort?
+5. Write a function to generate the Fibonacci number
+Recall the Fibonacci Sequence,  the terms are numbered from 0 onwards like this:
+
+n =	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	...
+xn =	0	1	1	2	3	5	8	13	21	34	55	89	144	233	377	
+
+we can write the rule:
+x(n) = x(n-1) + x(n-2)
+
+from functools import lru_cache
+@lru_cache(None)
+def fib(n):
+
+
+n = 10
+print(fib(n))
