@@ -37,7 +37,28 @@ ls | grep .py | wc -l
 ps -al
 kill -9 process_id
 
-Part B: basic Python
+Part B: Binary number
+1. List all the 3 bits binary numbers
+2. convert binary number of 1001 to decimal. (hint: 2**0 = 1, 2**!=2, 2**2 =4, 2**3 =8)
+3. convert decimal number to  binary number(4 bits) and to hexadecimal
+decimal     binary      hexadecimal    
+0           0000        0 
+1           0001        1
+2           0010        2
+3           0011        3
+4           0100        4
+5           0101        5
+6           0110        6
+7           0111        7
+8           1000        8
+9           1001        9
+10          1010        A
+11          1011        B
+12          1100        C
+13          1101        D
+14          1110        E
+15          1111        F
+Part C: basic Python
 1. what is the output of the following code:
 >>> a , b = 4, 3
 >>> print(a//b)
@@ -146,7 +167,7 @@ b =  a.replace('love', 'hate')
 'I love Python and Python loves me!'
 >>> "_".join(d)
 'I_love_Python_and_Python_loves_me!'
-Part C: solving problems by using python.
+Part D: solving problems by using python.
 1. What is the favorite color of my community's cars? Alex is interested in the favorite color of his neighborhood. He is collecting the car colors during a lovely sunshine weekend afternoon. Here is the data he collected:
 
 car_colors = ['white', 'grey', 'white', 'grey', 'black', 'silver', 'green', 'black', 'white']
