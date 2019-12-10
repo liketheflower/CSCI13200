@@ -19,17 +19,23 @@ def bfs(begin, target):
                 new_state[3*r+c], new_state[3*i+j] = old_state[3*i+j],old_state[3*r+c]
                 # a, b = b, a
                 new_state = ''.join(new_state)
-                parent[new_state] = state
                 if new_state not in seen:
+                    parent[new_state] = state
                     if new_state == target:
-                        print('Solution found!')
+                        print('Solution found!', new_state)
+                        #print(parent)
+                        #print("1423586#7" in parent)
                         #solution = []
+
+                        #return []
                         current_node = new_state
                         solution = [current_node]
+                        print(parent)
                         while current_node in parent:
                             parent_node = parent[current_node]
                             solution.append(parent_node)
                             current_node = parent_node
+                            print(solution)
                         return solution[::-1]
                     open_queue.append((r, c, new_state))
                     seen.add(new_state)
@@ -44,7 +50,8 @@ def solve(begin, target):
 def print_solution(s):
     for i in range(3):
         print(s[i*3:i*3+3])
-begin = "312#45678"
+#begin = "31245678#"
+begin = "1423586#7"
 target = "#12345678"
 solution = solve(begin, target)
 print('We need ', len(solution), 'steps to find the solution')
